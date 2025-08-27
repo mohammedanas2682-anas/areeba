@@ -284,11 +284,10 @@
       transform: rotateY(0deg);
      }
  
-    .gallery {
-
+    .gallery img {
+      height: 70px;
        display: grid; 
        display: flex;
-       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
        gap: 12px;
        }
     .frame {
@@ -743,9 +742,10 @@ h2{
   text-align:center
 }
 .gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-  gap:10px
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; 
 }
 .gallery img{
   width:100%;
